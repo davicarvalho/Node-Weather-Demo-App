@@ -4,7 +4,8 @@ const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
-const port = 3000
+// setting up port for heroku
+const port = process.env.PORT || 3000
 const app = express()
 
 //define paths for Express config
